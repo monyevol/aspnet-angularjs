@@ -1,0 +1,14 @@
+﻿<div ng-controller="ViolationsTypesController">
+    <h2 class="text-center maroon bold common-font">{{violationsTypesTitle}}</h2>
+
+    <table class="table table-striped common-font">
+        <tr>
+            <td class="bold">Violation Name</td>
+            <td class="bold">Description</td>
+        </tr>
+        <tr ng-repeat="category in categories">
+            <td><span ng-bind="category.violationName"></span></td>
+            <td><span ng-bind="category.description"></span></td>
+        </tr>
+    </table>
+</div>

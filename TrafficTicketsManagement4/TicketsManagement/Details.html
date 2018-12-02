@@ -1,0 +1,47 @@
+﻿<div class="common-font" ng-controller="TrafficViolationsController">
+    <h2 class="text-center common-font maroon bold">Traffic Violation Details</h2>
+
+
+    <table class="table table-striped details-holder">
+        <tr>
+            <td class="bold">Violation #:</td>
+            <td><span ng-bind="ticket.violationNumber"></span></td>
+        </tr>
+        <tr>
+            <td class="bold">Camera Information:</td>
+            <td><span ng-bind="ticket.cameraNumber"></span></td>
+        </tr>
+        <tr>
+            <td class="bold">Vehicle Tag #:</td>
+            <td><span ng-bind="ticket.tagNumber"></span></td>
+        </tr>
+        <tr>
+            <td class="bold">Violation Type:</td>
+            <td><span ng-bind="ticket.vName"></span></td>
+        </tr>
+        <tr>
+            <td class="bold">Violation Date</td>
+            <td><span ng-bind="ticket.violationDate"></span></td>
+        </tr>
+        <tr>
+            <td class="bold">Violation Time</td>
+            <td><span ng-bind="ticket.violationTime"></span></td>
+        </tr>
+        <tr>
+            <td class="bold">Photo Available</td>
+            <td><span ng-bind="ticket.photoAvailable"></span></td>
+        </tr>
+        <tr>
+            <td class="bold">Video Available</td>
+            <td><span ng-bind="ticket.videoAvailable"></span></td>
+        </tr>
+        <tr>
+            <td class="bold">Payment Due Date</td>
+            <td><span ng-bind="ticket.paymentDueDate"></span></td>
+        </tr>
+        <tr>
+            <td class="bold">Payment Amount</td>
+            <td><span ng-bind="ticket.paymentAmount"></span></td>
+        </tr>
+    </table>
+</div>

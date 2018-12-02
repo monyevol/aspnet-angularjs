@@ -1,0 +1,23 @@
+﻿<div ng-controller="VehiclesController">
+    <h2 class="text-center maroon bold common-font">{{vehiclesTitle}}</h2>
+    <p class="common-font text-center">{{vehiclesDescriptions}}</p>
+    
+    <table class="table table-striped common-font">
+        <tr>
+            <td class="bold">Tag #</td>
+            <td class="bold">Owner's Drv. Lic. #</td>
+            <td class="bold">Make</td>
+            <td class="bold">Model</td>
+            <td class="bold">Year</td>
+            <td class="bold">Color</td>
+        </tr>
+        <tr ng-repeat="car in vehicles">
+            <td><span ng-bind="car.tagNumber"></span></td>
+            <td><span ng-bind="car.drvLicNumber"></span></td>
+            <td><span ng-bind="car.make"></span></td>
+            <td><span ng-bind="car.model"></span></td>
+            <td><span ng-bind="car.year"></span></td>
+            <td><span ng-bind="car.color"></span></td>
+        </tr>
+    </table>
+</div>

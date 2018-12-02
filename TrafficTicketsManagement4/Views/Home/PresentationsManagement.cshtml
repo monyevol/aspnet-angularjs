@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Traffic Management Topics";
+}
+
+@Scripts.Render("~/bundles/jquery")
+
+<div ng-app="trafficTicketSystem">
+    <main-title></main-title>
+
+    <div class="right-border">
+        <div class="row common-font">
+            <div class="col-md-4 left-border">
+                <cameras-summary></cameras-summary>
+            </div>
+            <div class="col-md-4 left-border">
+                <drivers-topics></drivers-topics>
+            </div>
+            <div class="col-md-4 left-border ">
+                <vehicles-operators></vehicles-operators>
+            </div>
+        </div>
+
+        <div class="bottom-border"></div>
+
+        <div class="row common-font">
+            <div class="col-md-6 left-border">
+                <violations-types></violations-types>
+            </div>
+            <div class="col-md-6 left-border">
+                <traffic-violations></traffic-violations>
+            </div>
+        </div>
+    </div>
+</div>

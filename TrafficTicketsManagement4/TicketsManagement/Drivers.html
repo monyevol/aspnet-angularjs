@@ -1,0 +1,27 @@
+﻿<div ng-controller="DriversController">
+    <h2 class="text-center maroon bold common-font">{{driversTitle}}</h2>
+    <p class="common-font text-center">{{driversInfo}}</p>
+
+    <table class="table table-striped common-font">
+        <tr>
+            <td class="bold">Drv. Lic. #</td>
+            <td class="bold">First Name</td>
+            <td class="bold">Last Name</td>
+            <td class="bold">Address</td>
+            <td class="bold">City</td>
+            <td class="bold">County</td>
+            <td class="bold">State</td>
+            <td class="bold">ZIP Code</td>
+        </tr>
+        <tr ng-repeat="person in drivers">
+            <td><span ng-bind="person.drvLicNumber"></span></td>
+            <td><span ng-bind="person.firstName"></span></td>
+            <td><span ng-bind="person.lastName"></span></td>
+            <td><span ng-bind="person.address"></span></td>
+            <td><span ng-bind="person.city"></span></td>
+            <td><span ng-bind="person.county"></span></td>
+            <td><span ng-bind="person.state"></span></td>
+            <td><span ng-bind="person.zipCode"></span></td>
+        </tr>
+    </table>
+</div>
